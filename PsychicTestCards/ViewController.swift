@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var card1: UIButton!
+    @IBOutlet weak var card2: UIButton!
+    @IBOutlet weak var card3: UIButton!
+    @IBOutlet weak var card4: UIButton!
+    @IBOutlet weak var card5: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

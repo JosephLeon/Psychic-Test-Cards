@@ -60,6 +60,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="twv-jN-d74"/>
+                    <connections>
+                        <outlet property="card1" destination="dU5-gX-2Bf" id="fCz-r3-nfO"/>
+                        <outlet property="card2" destination="Tel-fT-XsB" id="mEX-dJ-2IQ"/>
+                        <outlet property="card3" destination="T13-dw-Tac" id="7pa-JE-Z7n"/>
+                        <outlet property="card4" destination="OrA-Xo-SQd" id="ChF-aq-ccK"/>
+                        <outlet property="card5" destination="7b4-Nj-zpN" id="GrD-uI-nDG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

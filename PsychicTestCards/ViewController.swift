@@ -16,9 +16,22 @@ class ViewController: UIViewController {
     @IBOutlet weak var card4: UIButton!
     @IBOutlet weak var card5: UIButton!
     
+    var symbols = String()[]
+    var score = 0
+    
     override func viewDidLoad() {
+        
+        symbols += ["circle", "plus", "squiggle", "square", "star"]
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    func playCards() {
+        
+        card1.setImage(UIImage(named: symbols[0]), forState: .Normal)
+        card1.layer.borderWidth = 1
+        card1.layer.borderColor = UIColor.lightGrayColor().CGColor
     }
 
     override func didReceiveMemoryWarning() {

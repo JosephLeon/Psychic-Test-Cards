@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // Card 1 is circle.
     @IBOutlet weak var card1: UIButton!
     @IBOutlet weak var card2: UIButton!
     @IBOutlet weak var card3: UIButton!
@@ -25,6 +26,8 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        playCards()
     }
     
     func playCards() {

@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         
-        symbols += ["circle", "plus", "squiggle", "square", "star"]
+        symbols += ["circle", "plus", "wave", "square", "star"]
         
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

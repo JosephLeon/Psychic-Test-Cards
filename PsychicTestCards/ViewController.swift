@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    // Card 1 is circle.
     @IBOutlet weak var card1: UIButton!
     @IBOutlet weak var card2: UIButton!
     @IBOutlet weak var card3: UIButton!
@@ -19,6 +18,7 @@ class ViewController: UIViewController {
     
     var symbols = [String]()
     var score = 0
+    var correctCard = 0
     
     override func viewDidLoad() {
         
@@ -42,7 +42,12 @@ class ViewController: UIViewController {
  
         }
 
+        correctCard = Int(arc4random_uniform(5))
 
+    }
+    
+    
+    @IBAction func buttonTapped(sender: UIButton) {
     }
 
     override func didReceiveMemoryWarning() {

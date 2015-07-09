@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var card4: UIButton!
     @IBOutlet weak var card5: UIButton!
     
-    var symbols = String()[]
+    var symbols = [String]()
     var score = 0
     
     override func viewDidLoad() {

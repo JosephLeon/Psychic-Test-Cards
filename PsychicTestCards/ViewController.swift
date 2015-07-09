@@ -32,23 +32,15 @@ class ViewController: UIViewController {
     
     func playCards() {
         
-        card1.setImage(UIImage(named: symbols[0]), forState: .Normal)
-        card1.layer.borderWidth = 1
-        card1.layer.borderColor = UIColor.lightGrayColor().CGColor
-        card2.setImage(UIImage(named: symbols[1]), forState: .Normal)
-        card2.layer.borderWidth = 1
-        card2.layer.borderColor = UIColor.lightGrayColor().CGColor
-        card3.setImage(UIImage(named: symbols[2]), forState: .Normal)
-        card3.layer.borderWidth = 1
-        card3.layer.borderColor = UIColor.lightGrayColor().CGColor
-        card4.setImage(UIImage(named: symbols[3]), forState: .Normal)
-        card4.layer.borderWidth = 1
-        card4.layer.borderColor = UIColor.lightGrayColor().CGColor
-        card5.setImage(UIImage(named: symbols[4]), forState: .Normal)
-        card5.layer.borderWidth = 1
-        card5.layer.borderColor = UIColor.lightGrayColor().CGColor
-
-
+        var counterStartZero = 0
+        var cards = [card1, card2, card3, card4, card5]
+        for card in cards {
+            card.setImage(UIImage(named: symbols[counterStartZero]), forState: .Normal)
+            card.layer.borderWidth = 1
+            card.layer.borderColor = UIColor.lightGrayColor().CGColor
+            counterStartZero++
+ 
+        }
 
 
     }

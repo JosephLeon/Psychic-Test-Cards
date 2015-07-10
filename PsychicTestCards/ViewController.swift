@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var card3: UIButton!
     @IBOutlet weak var card4: UIButton!
     @IBOutlet weak var card5: UIButton!
+    @IBOutlet weak var scoreLabel: UILabel!
     
     var symbols = [String]()
     var score = 0
@@ -61,6 +62,8 @@ class ViewController: UIViewController {
         }
         
         ++timesPlayed
+        
+        self.scoreLabel.text = "\(score) out of \(timesPlayed)"
         
         let ac = UIAlertController(title: title, message: "Your score is \(score) out of \(timesPlayed)", preferredStyle: .Alert)
         ac.addAction(UIAlertAction(title: "Continue", style: .Default, handler: playCards))

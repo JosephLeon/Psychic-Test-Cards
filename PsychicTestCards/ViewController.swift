@@ -58,7 +58,6 @@ class ViewController: UIViewController {
             ++score
         } else {
             title = "Wrong"
-            --score
         }
         
         ++timesPlayed

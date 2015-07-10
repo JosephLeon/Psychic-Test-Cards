@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     var symbols = [String]()
     var score = 0
     var correctCard = 0
+    var timesPlayed = 0
     
     override func viewDidLoad() {
         
@@ -59,10 +60,9 @@ class ViewController: UIViewController {
             --score
         }
         
-        var timesPlayed = 0
         ++timesPlayed
         
-        let ac = UIAlertController(title: title, message: "Your score is \(score).", preferredStyle: .Alert)
+        let ac = UIAlertController(title: title, message: "Your score is \(score) out of \(timesPlayed)", preferredStyle: .Alert)
         ac.addAction(UIAlertAction(title: "Continue", style: .Default, handler: playCards))
         presentViewController(ac, animated: true, completion: nil)
         

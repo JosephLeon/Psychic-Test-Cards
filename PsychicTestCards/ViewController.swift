@@ -27,11 +27,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        playCards()
-    }
-    
-    func playCards() {
-        
         var counterStartZero = 0
         var cards = [card1, card2, card3, card4, card5]
         for card in cards {
@@ -39,15 +34,39 @@ class ViewController: UIViewController {
             card.layer.borderWidth = 1
             card.layer.borderColor = UIColor.lightGrayColor().CGColor
             counterStartZero++
- 
+            
         }
 
+        playCards()
+    }
+    
+    func playCards(action: UIAlertAction! = nil) {
+        
         correctCard = Int(arc4random_uniform(5))
 
     }
     
     
     @IBAction func buttonTapped(sender: UIButton) {
+        
+        var title = String()
+        
+        if sender.tag == correctCard {
+            title = "Correct"
+            ++score
+        } else {
+            title = "Wrong"
+            --score
+        }
+        
+        var timesPlayed = 0
+        ++timesPlayed
+        
+        let ac = UIAlertController(title: title, message: "Your score is \(score).", preferredStyle: .Alert)
+        ac.addAction(UIAlertAction(title: "Continue", style: .Default, handler: playCards()))
+        presentViewController(ac, animated: true, completion: nil)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

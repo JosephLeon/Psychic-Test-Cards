@@ -63,9 +63,8 @@ class ViewController: UIViewController {
         ++timesPlayed
         
         let ac = UIAlertController(title: title, message: "Your score is \(score).", preferredStyle: .Alert)
-        ac.addAction(UIAlertAction(title: "Continue", style: .Default, handler: playCards()))
+        ac.addAction(UIAlertAction(title: "Continue", style: .Default, handler: playCards))
         presentViewController(ac, animated: true, completion: nil)
-        
         
     }
 

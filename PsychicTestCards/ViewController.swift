@@ -36,10 +36,8 @@ class ViewController: UIViewController {
             card.layer.borderWidth = 1
             card.layer.borderColor = UIColor.lightGrayColor().CGColor
             counterStartZero++
-            
         }
 
-        playCards()
     }
     
     func playCards(action: UIAlertAction! = nil) {
@@ -51,30 +49,21 @@ class ViewController: UIViewController {
     
     @IBAction func buttonTapped(sender: UIButton) {
         
-        var title = String()
-        
         if sender.tag == correctCard {
-            title = "Correct"
             ++score
-        } else {
-            title = "Wrong"
         }
         
         ++timesPlayed
         
         self.scoreLabel.text = "\(score) out of \(timesPlayed)"
         
-        let ac = UIAlertController(title: title, message: "Your score is \(score) out of \(timesPlayed)", preferredStyle: .Alert)
-        ac.addAction(UIAlertAction(title: "Continue", style: .Default, handler: playCards))
-        presentViewController(ac, animated: true, completion: nil)
-        
+        playCards()
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 

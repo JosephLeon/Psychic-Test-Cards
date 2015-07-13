@@ -76,6 +76,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGb-SS-s1v">
+                                <rect key="frame" x="16" y="130" width="148" height="178"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -86,6 +92,7 @@
                         <outlet property="card3" destination="T13-dw-Tac" id="7pa-JE-Z7n"/>
                         <outlet property="card4" destination="OrA-Xo-SQd" id="ChF-aq-ccK"/>
                         <outlet property="card5" destination="7b4-Nj-zpN" id="GrD-uI-nDG"/>
+                        <outlet property="resultsLabel" destination="xGb-SS-s1v" id="HIQ-97-dPT"/>
                         <outlet property="scoreLabel" destination="f73-Ec-xyq" id="7fG-P3-Tec"/>
                     </connections>
                 </viewController>
